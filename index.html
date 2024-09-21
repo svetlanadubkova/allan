@@ -1,0 +1,305 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allan's Ultimate NYC Adventure Guide 🗽</title>
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #4ecdc4;
+            --accent-color: #feca57;
+            --text-color: #333;
+            --bg-color: #f7f7f7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '🗽';
+            font-size: 100px;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            opacity: 0.2;
+        }
+
+        header::after {
+            content: '🍕';
+            font-size: 100px;
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            opacity: 0.2;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        
+         .welcome-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .welcome-image {
+                max-width: 100%;
+            }
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .map {
+            height: 300px;
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Allan's Ultimate NYC Adventure Guide 🗽</h1>
+        <p>Get ready for a slice of the Big Apple! 🍎</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#neighborhood">🏠 Neighborhood &amp; Subway</a></li>
+            <li><a href="#food">🍕 Local Food</a></li>
+            <li><a href="#groceries">🛒 Groceries</a></li>
+            <li><a href="#safety">🚨 Street Smarts &amp; Safety</a></li>
+            <li><a href="#excursions">🚢 Manhattan Excursions</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <img src="https://i.imgur.com/85hhEef.jpeg" alt="Welcome to NYC" class="welcome-image">
+
+        <section id="neighborhood" class="section">
+            <h2>🏠 Neighborhood &amp; Subway Tips</h2>
+            <p><strong>Your Home Sweet Home:</strong> 1095 E 15th St, Apt #3B, Brooklyn, NY 12230</p>
+            <p><strong>Heads Up:</strong> 🔇 The buzzer's on vacation. 🗑️ Toss trash daily to keep the creepy crawlies away. ♻️ Recyclables chill outside on the 3rd floor, and there's a magic chute for regular trash!</p>
+            <p><strong>Neighbor Elena:</strong> 📞 1-347-856-7222 (5th floor) - ask her to take you on the roof!</p>
+            <p><strong>Your Ticket to Adventure:</strong> 🚇 Q Train</p>
+            <p><strong>Q Train Quest:</strong> Head east on E 15th St towards Avenue J. Turn left onto Avenue J and walk about 0.2 miles. The Q train station (Avenue J) will be on your right. Look for the subway entrance between East 15th and East 16th Streets.</p>
+            <p><strong>Train Direction Tips:</strong>
+                <br>👉 For Manhattan: Take the Q train northbound (towards 96 St-2 Av).
+                <br>👉 For Coney Island: Take the Q train southbound (towards Coney Island-Stillwell Av). I recommend you take a walk on the Coney Island Boardwalk while you're here! it's a short ride.
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.0927731184836!2d-73.96274388459748!3d40.62513597934211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c244756506cdf9%3A0x339cc2ae6b2cc578!2sAvenue%20J%20(BMT%20Brighton%20Line)!5e0!3m2!1sen!2sus!4v1632323130799!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section id="food" class="section">
+            <h2>🍕 Local Food Recommendations</h2>
+            <div>
+                <h3>🍕 Di Fara Pizza</h3>
+                <p>The pizza paradise you've been dreaming of! You've had a taste, now it's time for the full experience!</p>
+                <p><strong>Address:</strong> 1424 Avenue J, Brooklyn, NY 11230</p>
+                <p><strong>Pro Tip:</strong> Go for the regular slice over the square one. And hey, tell them "the birthday girl from Friday" sent you! 😉</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.1382808589673!2d-73.96377688459753!3d40.62446997934231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c244740f1b40bd%3A0x692b0995b9ad2875!2sDi%20Fara%20Pizza!5e0!3m2!1sen!2sus!4v1632323265799!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div>
+                <h3>🧆 Falafel Tanami</h3>
+                <p>The best falafel in the world. It's not just a meal, it's a Middle Eastern masterpiece!</p>
+                <p><strong>Address:</strong> 1305 E 17th St, Brooklyn, NY 11230</p>
+                <p><strong>Fun Fact:</strong> Their hummus is so smooth, it could make velvet jealous! 😋</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.2577135853575!2d-73.9588948845976!3d40.62234697934269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24477077c49e7%3A0x8e1c5187a7e99d59!2s1305%20E%2017th%20St%2C%20Brooklyn%2C%20NY%2011230!5e0!3m2!1sen!2sus!4v1632323330799!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div>
+                <h3>🥪 Avenue J Grill Zone</h3>
+                <p>Craving a classic BLT? This is your spot!</p>
+                <p><strong>Address:</strong> 1504 Avenue J, Brooklyn, NY 11230</p>
+                <p><strong>Deal Alert:</strong> Grab a BLT for $5! 💰</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.152448911351!2d-73.96187468459755!3d40.62424097934237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24474405bd433%3A0x9359786b2a2c97d!2s1504%20Avenue%20J%2C%20Brooklyn%2C%20NY%2011230!5e0!3m2!1sen!2sus!4v1632323395799!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section id="groceries" class="section">
+            <h2>🛒 Grocery Guide</h2>
+            <div>
+                <h3>🥕 Berry Goods</h3>
+                <p>Your go-to for affordable groceries!</p>
+                <p><strong>Address:</strong> 1413 Avenue J, Brooklyn, NY 11230</p>
+                <p><strong>Hours:</strong> Closes 9:30 PM</p>
+                <p><strong>Bargain Hunter Tip:</strong> Check out their discount section outside. Snag bags of close-to-expiring foods for 2 for $2! 🤑</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.137280858967!2d-73.96397668459752!3d40.62446997934231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c244740f1b40bd%3A0x692b0995b9ad2875!2s1413%20Avenue%20J%2C%20Brooklyn%2C%20NY%2011230!5e0!3m2!1sen!2sus!4v1632323460799!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div>
+                <h3>🌙 7-Eleven</h3>
+                <p>For those midnight snack emergencies!</p>
+                <p><strong>Address:</strong> 1523 Avenue J, Brooklyn, NY 11230</p>
+                <p><strong>Pro Tip:</strong> Best for late-night snacks and grocery needs. Open 24/7! 🕰️</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.1523069151487!2d-73.96134668459754!3d40.62424097934237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24474405bd433%3A0x9359786b2a2c97d!2s1523%20Avenue%20J%2C%20Brooklyn%2C%20NY%2011230!5e0!3m2!1sen!2sus!4v1632323525799!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section id="safety" class="section">
+            <h2>🚨 Street Smarts &amp; Safety Tips</h2>
+            <ul>
+                <li>🙉 If someone's having a loud conversation with themselves, it's not an invitation to join in.</li>
+                <li>👀 Master the art of the "New York Look" - confident, purposeful, and slightly disinterested.</li>
+                <li>🚶&zwj;♀️ There's a redhead lady in the neighborhood who's a bit... quirky. Give her the same wide berth you'd give to a subway car with no passengers.</li>
+                <li>🚶&zwj;♂️ Walk like you know where you're going, even if you don't. Fake it 'til you make it!</li>
+                <li>📞 Keep Elena's number handy (1-347-856-7222) - always good to have a local contact! Ask her to take you on the roof</li>
+            </ul>
+        </section>
+
+        <section id="excursions" class="section">
+            <h2>🚢 Manhattan Excursions</h2>
+            <div>
+                <h3>🏝️ Governor's Island</h3>
+                <p>A car-free oasis just a short ferry ride away! It's like a mini-vacation from your vacation.</p>
+                <p><strong>Ferry Facts:</strong> 🎟️ $2.50 for a scenic ride. <a href="https://www.govisland.com/things-to-do/recreation/bike-rentals" target="_blank" style="color: var(--secondary-color); text-decoration: underline;">On weekday mornings, snag a free bike rental for an hour!</a></p>
+                <p><strong>How to Get There:</strong>
+                    <br>1. Hop on the Q train northbound (towards 96 St-2 Av) to Atlantic Ave-Barclays Ctr.
+                    <br>2. Transfer to the 4 or 5 train southbound (towards Bowling Green).
+                    <br>3. Get off at Bowling Green and follow signs to the ferry terminal.
+                    <br>4. Enjoy your boat ride to island bliss! 🚢
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.6868847853965!2d-74.01836168459486!3d40.69010797933441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a6c5c3a8fa3%3A0x6879b2e139f30aa8!2sGovernors%20Island%20Ferry!5e0!3m2!1sen!2sus!4v1632323590799!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div>
+                <h3>🌉 Brooklyn Bridge Walk</h3>
+                <p>A stroll so nice, they wrote songs about it! Don't forget your camera - this view is Instagram gold!</p>
+                <p><strong>Walking the Walk:</strong>
+                    <br>1. Take the Q train northbound (towards 96 St-2 Av) to DeKalb Ave.
+                    <br>2. Follow the signs (or the crowd) to the Brooklyn Bridge Pedestrian Walkway.
+                    <br>3. Walk towards Manhattan for the classic view, or towards Brooklyn for a fresh perspective!
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2010019463672!2d-73.99905368459453!3d40.70631797933324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3e8a29798f%3A0x649a2f32a02a6685!2sBrooklyn%20Bridge%20Pedestrian%20Walkway!5e0!3m2!1sen!2sus!4v1632323655799!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section id="final-tips" class="section">
+            <h2>🎉 Final Tips for an Epic NYC Adventure</h2>
+            <ul>
+                <li>🗽 Embrace the city's energy - it's contagious!</li>
+                <li>🍕 Always have cash on hand - some of the best food spots (like in Chinatown!!!) are cash-only.</li>
+                <li>🚇 Download a subway app like CityMapper or Transit for real-time updates.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer style="background-color: var(--primary-color); color: white; text-align: center; padding: 20px 0; margin-top: 20px;">
+        <p>Enjoy your NYC adventure, Allan! 🗽🍎🚕</p>
+        <p>Created with ❤️ by your personal NYC guide</p>
+    </footer>
+
+
+</body></html>
